@@ -5,4 +5,3 @@ rsync-deploy:
     - "8080:80"
   environment:
     DEPLOY_KEY_URL: https://github.com/steveltn.keys
-    PASSWORD: foobar

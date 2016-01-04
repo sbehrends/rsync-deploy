@@ -32,3 +32,4 @@ AcceptEnv LANG LC_*
 Subsystem sftp /usr/lib/openssh/sftp-server
 
 AllowUsers rsync
+PasswordAuthentication no

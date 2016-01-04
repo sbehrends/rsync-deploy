@@ -3,7 +3,8 @@ FROM alpine
 MAINTAINER Weiyan Shao <lighteningman@gmail.com>
 
 RUN apk --update add nginx openssh curl rsync && \
-    adduser rsync -D
+    adduser rsync -D && \
+    passwd rsync -d password_that_should_never_be_used
 
 COPY ./fs-overlay/ /
 

@@ -14,8 +14,9 @@ rsync-deploy:
     - "80:80"
   environment:
     DEPLOY_KEY_URL: https://github.com/yourname.keys
-    # PASSWORD: foobar
 ```
+
+GitHub exposes your public keys at `https://github.com/<username>.keys`, which is perfect for the `DEPLOY_KEY_URL` here.
 
 Then upload the files via rsync:
 
